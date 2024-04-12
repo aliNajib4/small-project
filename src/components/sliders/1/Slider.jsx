@@ -8,6 +8,7 @@ const Slider1 = () => {
   const [handleAnimation, setHandleAnimation] = useState(false);
 
   const handleClick = (direction) => {
+    if (handleAnimation) return;
     setHandleAnimation(true);
     setTimeout(() => {
       if (direction === "LEFT") {
