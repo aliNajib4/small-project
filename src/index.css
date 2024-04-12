@@ -9,4 +9,7 @@
   .button {
     @apply rounded-full border-2 border-blue-300 bg-blue-600 px-2 py-1 capitalize text-white hover:border-blue-100 hover:bg-blue-500;
   }
+  .arr {
+    @apply absolute top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-xl bg-white p-3 text-xl text-slate-700 shadow-lg duration-500 ease-in-out hover:shadow;
+  }
 }

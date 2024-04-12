@@ -32,7 +32,9 @@ const RandomColor = () => {
           </button>
         </li>
       </ul>
-      <h1 className="title text-6xl capitalize">{enableRGB ? "RGB" : "HEX"} color</h1>
+      <h1 className="title text-6xl capitalize">
+        {enableRGB ? "RGB" : "HEX"} color
+      </h1>
       <p className="text text-4xl">{enableRGB ? toRGB(color) : color}</p>
     </div>
   );
