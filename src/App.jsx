@@ -9,6 +9,7 @@ import Slider2 from "./components/sliders/2/Slider";
 import Slider3 from "./components/sliders/3/Slider";
 import NotFound from "./components/NotFound";
 import LoadMore from "./components/load_more/LoadMore";
+import TreeView from "./components/tree_view/TreeView";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/sliders/2" element={<Slider2 />} />
           <Route path="/sliders/3" element={<Slider3 />} />
           <Route path="/load-more" element={<LoadMore />} />
+          <Route path="/tree-view" element={<TreeView />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
