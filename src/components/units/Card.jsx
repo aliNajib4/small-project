@@ -8,19 +8,21 @@ const Card = ({ img, title, desc, URL }) => {
       {img && (
         <TERipple className="w-[150px]">
           <div className="relative overflow-hidden bg-cover bg-no-repeat">
-            <img className="w-full rounded-t-lg" src={img} alt="" />
-            <Link to={URL}>
+            <img
+              className="w-full rounded-t-lg"
+              src={img ? img : "https://via.placeholder.com/150"}
+              alt=""
+            />
+            <Link to={URL ? URL : "/"}>
               <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
             </Link>
           </div>
         </TERipple>
       )}
       <div className="p-6">
-        {title && (
-          <h5 className="mb-2 text-center text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-            {title}
-          </h5>
-        )}
+        <h5 className="mb-2 text-center text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          {title ? title : "this is title"}
+        </h5>
         {desc && (
           <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
             {desc}
