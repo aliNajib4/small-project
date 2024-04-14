@@ -11,6 +11,7 @@ import NotFound from "./components/NotFound";
 import LoadMore from "./components/load_more/LoadMore";
 import TreeView from "./components/tree_view/TreeView";
 import QrCode from "./components/qr_code/QrCode";
+import DarkMode from "./components/dark_mode/DarkMode";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/load-more" element={<LoadMore />} />
           <Route path="/tree-view" element={<TreeView />} />
           <Route path="/qr-code" element={<QrCode />} />
+          <Route path="/dark-mode" element={<DarkMode />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

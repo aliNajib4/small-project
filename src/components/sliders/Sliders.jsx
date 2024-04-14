@@ -1,4 +1,4 @@
-import Card from "./../units/Card";
+import Card from "../../helpers/units/Card";
 
 const Sliders = () => {
   return (

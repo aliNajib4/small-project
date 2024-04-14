@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-dark_mode
 
 # Editor directories and files
 .vscode/*

@@ -7,7 +7,7 @@ const QrCode = () => {
 
   return (
     <div className="center h-screen w-screen bg-gray-200">
-      <div className="flex w-[256px] gap-16 flex-col items-center">
+      <div className="flex w-[256px] flex-col items-center gap-16">
         <div className="flex gap-5">
           <input
             type="text"
