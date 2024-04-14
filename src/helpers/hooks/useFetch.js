@@ -6,9 +6,9 @@ const useFetch = (url = "") => {
     (state, { type, payload }) => {
       switch (type) {
         case "LOADING":
-          return { ...state, loading: true };
+          return { ...state, loading: true, error: false, data: [] };
         case "SUCCESS":
-          return { ...state, loading: false, data: payload };
+          return { ...state, loading: false, error: false, data: payload };
         case "ERROR":
           return {
             ...state,
