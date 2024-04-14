@@ -8,12 +8,15 @@ export default {
   theme: {
     extend: {
       animation: {
-        fade_in_out: "fade_in 0.5s ease-in-out",
+        fade_in_out: "fade_in_out 0.5s ease-in-out",
       },
       keyframes: {
-        fade_in: {
-          // "0%, 100%": { transform: "rotate(-3deg)" },
+        fade_in_out: {
           "50%": { opacity: "0" },
+        },
+        fade_in: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
     },

@@ -15,6 +15,7 @@ import DarkMode from "./components/dark_mode/DarkMode";
 import Tabs from "./components/tabs/Tabs";
 import dataTabs from "./components/tabs/data";
 import ScrollIndicator from "./components/scroll_indicator/ScrollIndicator";
+import Popup from "./components/modal_popup/Popup";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/dark-mode" element={<DarkMode />} />
           <Route path="/scroll-indicator" element={<ScrollIndicator />} />
           <Route path="/tabs" element={<Tabs data={dataTabs} />} />
+          <Route path="/popup" element={<Popup />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
