@@ -12,6 +12,7 @@ import LoadMore from "./components/load_more/LoadMore";
 import TreeView from "./components/tree_view/TreeView";
 import QrCode from "./components/qr_code/QrCode";
 import DarkMode from "./components/dark_mode/DarkMode";
+import ScrollIndicator from "./components/scroll_indicator/ScrollIndicator";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/tree-view" element={<TreeView />} />
           <Route path="/qr-code" element={<QrCode />} />
           <Route path="/dark-mode" element={<DarkMode />} />
+          <Route path="/scroll-indicator" element={<ScrollIndicator />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
