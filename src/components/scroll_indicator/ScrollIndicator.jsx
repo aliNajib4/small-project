@@ -10,7 +10,7 @@ const ScrollIndicator = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const height = main.current.offsetHeight - (window?.innerHeight || 0);
+      const height = main.current?.offsetHeight - (window?.innerHeight || 0);
       const scroll = window.scrollY;
 
       setValue((scroll / height) * 100);
