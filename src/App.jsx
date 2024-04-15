@@ -20,6 +20,7 @@ import GithubProflie from "./components/github_profile/GithubProfile";
 import AutoComplete from "./components/auto_complete/AutoComplete";
 import Game from "./components/tic-tac-toe/Game";
 import ScrollToTopAndBottom from "./components/scroll_to_top_and_bottom/ScrollToTopAndBottom";
+import Weather from "./components/weather/Weather";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
             path="/scroll-to-top-and-bottom"
             element={<ScrollToTopAndBottom />}
           />
+          <Route path="/weather" element={<Weather />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
