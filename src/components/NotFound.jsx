@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NotFound = () => {
   return (
     <div className="center h-screen">
@@ -7,7 +9,7 @@ const NotFound = () => {
           <p>404</p>
         </div>
         <button className="button text-md border-gray-100 bg-gray-200 font-semibold text-black duration-500 hover:border-gray-400 hover:bg-gray-300 dark:text-white">
-          Go To Home
+          <Link to="/"> Go To Home</Link>
         </button>
       </div>
     </div>
