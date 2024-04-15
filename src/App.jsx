@@ -19,11 +19,12 @@ import Popup from "./components/modal_popup/Popup";
 import GithubProflie from "./components/github_profile/GithubProfile";
 import AutoComplete from "./components/auto_complete/AutoComplete";
 import Game from "./components/tic-tac-toe/Game";
+import ScrollToTopAndBottom from "./components/scroll_to_top_and_bottom/ScrollToTopAndBottom";
 
 function App() {
   return (
     <Router>
-      <main className="App center h-screen font-mono">
+      <main className="App center min-h-screen font-mono">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/accordion" element={<Accordion />} />
@@ -43,6 +44,10 @@ function App() {
           <Route path="/github-profile" element={<GithubProflie />} />
           <Route path="/auto-complete" element={<AutoComplete />} />
           <Route path="/tic-tac-toe" element={<Game />} />
+          <Route
+            path="/scroll-to-top-and-bottom"
+            element={<ScrollToTopAndBottom />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
