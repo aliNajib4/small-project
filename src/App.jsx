@@ -17,6 +17,7 @@ import dataTabs from "./components/tabs/data";
 import ScrollIndicator from "./components/scroll_indicator/ScrollIndicator";
 import Popup from "./components/modal_popup/Popup";
 import GithubProflie from "./components/github_profile/GithubProfile";
+import AutoComplete from "./components/auto_complete/AutoComplete";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/tabs" element={<Tabs data={dataTabs} />} />
           <Route path="/popup" element={<Popup />} />
           <Route path="/github-profile" element={<GithubProflie />} />
+          <Route path="/auto-complete" element={<AutoComplete />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
