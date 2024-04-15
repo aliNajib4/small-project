@@ -18,6 +18,7 @@ import ScrollIndicator from "./components/scroll_indicator/ScrollIndicator";
 import Popup from "./components/modal_popup/Popup";
 import GithubProflie from "./components/github_profile/GithubProfile";
 import AutoComplete from "./components/auto_complete/AutoComplete";
+import Game from "./components/tic-tac-toe/Game";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/popup" element={<Popup />} />
           <Route path="/github-profile" element={<GithubProflie />} />
           <Route path="/auto-complete" element={<AutoComplete />} />
+          <Route path="/tic-tac-toe" element={<Game />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
