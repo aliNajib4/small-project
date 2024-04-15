@@ -8,6 +8,7 @@ const ScrollToTopAndBottom = () => {
   );
 
   const bottomRef = useRef(null);
+  const sectionRef = useRef(null);
 
   if (loading) <Loading />;
   return (
@@ -18,9 +19,30 @@ const ScrollToTopAndBottom = () => {
       >
         Scroll To Bottom
       </button>
+      <button
+        className="button"
+        onClick={() =>
+          sectionRef.current.getBoundingClientRect().top >= 0
+            ? sectionRef.current.scrollIntoView({ behavior: "smooth" })
+            : window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              })
+        }
+      >
+        Scroll To Section
+      </button>
       <div className="lorem-data">
         {data.map((item) => (
-          <p key={item.id}>{item.body}</p>
+          <>
+            <p key={item.id}>{item.body}</p>
+            {item.id === 20 ? (
+              <div className="center h-10 bg-gray-300" ref={sectionRef}>
+                section
+              </div>
+            ) : null}
+          </>
         ))}
       </div>
       <button
