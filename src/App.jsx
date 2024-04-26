@@ -22,6 +22,7 @@ import Game from "./components/tic-tac-toe/Game";
 import ScrollToTopAndBottom from "./components/scroll_to_top_and_bottom/ScrollToTopAndBottom";
 import Weather from "./components/weather/Weather";
 import TimerDown from "./components/timer_down/TimerDown";
+import Parallax from "./components/parallax/Parallax";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           />
           <Route path="/weather" element={<Weather />} />
           <Route path="/timer-down" element={<TimerDown count={1000} />} />
+          <Route path="/parallax" element={<Parallax />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
